@@ -65,4 +65,8 @@ class AlertViewController: UIViewController, PanModalPresentable {
     var isUserInteractionEnabled: Bool {
         return true
     }
+    
+    func shouldDismissOn(tap: CGPoint) -> Bool {
+        return true
+    }
 }

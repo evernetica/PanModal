@@ -45,6 +45,10 @@ extension FullScreenNavController: PanModalPresentable {
     var showDragIndicator: Bool {
         return false
     }
+    
+    func shouldDismissOn(tap: CGPoint) -> Bool {
+        return true
+    }
 }
 
 private class FullScreenViewController: UIViewController {

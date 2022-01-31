@@ -33,4 +33,8 @@ extension BasicViewController: PanModalPresentable {
     var anchorModalToLongForm: Bool {
         return false
     }
+    
+    func shouldDismissOn(tap: CGPoint) -> Bool {
+        return true
+    }
 }

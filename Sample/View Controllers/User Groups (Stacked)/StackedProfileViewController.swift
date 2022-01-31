@@ -109,5 +109,9 @@ class StackedProfileViewController: UIViewController, PanModalPresentable {
     var shouldRoundTopCorners: Bool {
         return true
     }
+    
+    func shouldDismissOn(tap: CGPoint) -> Bool {
+        return true
+    }
 
 }

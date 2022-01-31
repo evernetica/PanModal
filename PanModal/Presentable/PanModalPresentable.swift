@@ -141,6 +141,13 @@ public protocol PanModalPresentable: AnyObject {
      Default value is true.
      */
     var allowsTapToDismiss: Bool { get }
+    
+    /**
+     Return false to handle the tap yourself (i.e. to forward taps to a precluded view)
+
+     Default value is true.
+     */
+    func shouldDismissOn(tap: CGPoint) -> Bool
 
     /**
      A flag to toggle user interactions on the container view.

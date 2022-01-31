@@ -49,6 +49,10 @@ class NavigationController: UINavigationController, PanModalPresentable {
     var shortFormHeight: PanModalHeight {
         return longFormHeight
     }
+    
+    func shouldDismissOn(tap: CGPoint) -> Bool {
+        return true
+    }
 }
 
 private class NavUserGroups: UserGroupViewController {
